@@ -12,5 +12,12 @@ public class Session {
     public void setLoggedInUser(User user) {
         this.loggedInUser = user;
     }
+
+    @Override
+    public String toString() {
+        return "Session{" +
+                "loggedInUser=" + loggedInUser +
+                '}';
+    }
 }
 

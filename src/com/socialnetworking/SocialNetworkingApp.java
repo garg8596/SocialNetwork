@@ -5,6 +5,8 @@ import com.commons.Session;
 import com.factory.CommandFactory;
 import com.model.User;
 
+import java.util.HashSet;
+
 public class SocialNetworkingApp {
 
     private CommandFactory commandFactory;
@@ -28,23 +30,38 @@ public class SocialNetworkingApp {
 
     public void availableFunctionalities() {
         System.out.println("Here are the list of things you can do:");
-        System.out.print("1.Login/SignUp <userId> <password>");
-        System.out.print(" 2.Post <content>");
-        System.out.print(" 3.Follow <user_id>");
-        System.out.print(" 4.Reply <feed_id> <reply_text>");
-        System.out.print(" 5.Upvote/Downvote <feed_id>");
-        System.out.print(" 6.Show NewsFeed <sortOptions>");
-        System.out.print(" 7.Logout");
+        System.out.print(" 1.login/signup <userId> <password>");
+        System.out.print(" 2.post <content>");
+        System.out.print(" 3.follow <user_id>");
+        System.out.print(" 4.reply <comment_id> <reply_text>");
+        System.out.print(" 5.upvote_c/downvote_c(for comment) <comment_id>");
+        System.out.print(" 6.upvote_p/downvote_p(for post) <post_id>");
+        System.out.print(" 7.showfeed <sortOptions>");
+        System.out.print(" 8.showprofile");
+        System.out.print(" 9.comment <post_id> <comment_text>");
+        System.out.print(" 10.logout");
+        System.out.print(" 11.exit");
         System.out.println();
     }
 
     public void sortOption(){
         System.out.println("Here are the SortOption you can use:");
         System.out.print("1.Followed users: posts by followed users appear first.");
-        System.out.print(" 2.Score (= upvotes - downvotes): higher the better.");
-        System.out.print(" 3.The number of comments: higher the better.");
-        System.out.print(" 4.Timestamp: more recent the better.");
+        System.out.print(" 2.<score> (= upvotes - downvotes): higher the better.");
+        System.out.print(" 3.<comments>: higher the better.");
+        System.out.print(" 4.<timestamp>: more recent the better.");
         System.out.println();
     }
 
+    public void logout() {
+        if(session.getLoggedInUser()==null){
+            System.out.println("Please login before logout!!!");
+        }
+        else{
+            System.out.println(session.getLoggedInUser().toString());
+            session.setLoggedInUser(null);
+            System.out.println("logout successful");
+            return;
+        }
+    }
 }

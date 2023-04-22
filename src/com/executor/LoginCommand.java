@@ -1,14 +1,16 @@
-package com.command;
+package com.executor;
 
+import com.command.Command;
 import com.commons.Session;
+import com.controller.AuthenticationController;
 import com.controller.UserController;
 import com.validations.InputValidator;
 
-public class LoginCommand extends Command{
-    UserController userController;
+public class LoginCommand extends Command {
+    AuthenticationController authenticationController;
 
     public LoginCommand(){
-        this.userController = new UserController();
+        this.authenticationController = new AuthenticationController();
     }
 
     @Override
@@ -16,6 +18,6 @@ public class LoginCommand extends Command{
         InputValidator.validateLoginAttempts(args);
         String userId = args[0];
         String userPassword = args[1];
-        userController.login(userId, userPassword, session);
+        authenticationController.login(userId, userPassword, session);
     }
 }
