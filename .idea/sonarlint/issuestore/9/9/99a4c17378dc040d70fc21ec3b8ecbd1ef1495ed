@@ -1,0 +1,16 @@
+
+U
+java:S2168"9Remove this dangerous instance of double-checked locking.(¬— 8ƒÎ†Ñú0
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(—İÅùøÿÿÿÿ8…Î†Ñú0
+U	java:S106("9Replace this use of System.out or System.err by a logger.(°èÎì8…Î†Ñú0
+U	java:S106,"9Replace this use of System.out or System.err by a logger.(Ğ§’œ8…Î†Ñú0
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(ª¯´Õşÿÿÿÿ8†Î†Ñú0
+Z	java:S1064"9Replace this use of System.out or System.err by a logger.(™ô¼Ïúÿÿÿÿ8†Î†Ñú0
+U	java:S1068"9Replace this use of System.out or System.err by a logger.(€ÈÍÏ8‡Î†Ñú0
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(°èÎì8ˆÎ†Ñú0
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(èçÁüÿÿÿÿ8ˆÎ†Ñú0
+Z	java:S106H"9Replace this use of System.out or System.err by a logger.(íì°²üÿÿÿÿ8ˆÎ†Ñú0
+Z	java:S106K"9Replace this use of System.out or System.err by a logger.(Á­Ó”ûÿÿÿÿ8ŠÎ†Ñú0
+T	java:S106Q"9Replace this use of System.out or System.err by a logger.(§ÿ¥^8±·È÷ú0
+\
+java:S1128"@Remove this unused import 'com.validations.ValidationException'.(Ù¯š88¹ÒÆ÷ú0

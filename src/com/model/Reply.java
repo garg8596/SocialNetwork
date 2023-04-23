@@ -46,4 +46,14 @@ public class Reply {
     public void setTimestamp(LocalDateTime timestamp) {
         this.timestamp = timestamp;
     }
+
+    @Override
+    public String toString() {
+        return "Reply{" +
+                "replyId='" + replyId + '\'' +
+                ", replyText='" + replyText + '\'' +
+                ", user=" + user +
+                ", timestamp=" + timestamp +
+                '}';
+    }
 }

@@ -1,0 +1,26 @@
+
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(çÚ´ã8“âìĞú0
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(Ç¥ˆçùÿÿÿÿ8“âìĞú0
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(Æ÷÷øÿÿÿÿ8“âìĞú0
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(ë±óÑ8“âìĞú0
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(´²…¡8“âìĞú0
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(¤ó†¼8“âìĞú0
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(÷† á8”âìĞú0
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(£ßšôøÿÿÿÿ8”âìĞú0
+U	java:S106("9Replace this use of System.out or System.err by a logger.(êá¹8”âìĞú0
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(èåéüÿÿÿÿ8”âìĞú0
+U	java:S106*"9Replace this use of System.out or System.err by a logger.(ƒõˆ¬8”âìĞú0
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(ä«õ÷úÿÿÿÿ8”âìĞú0
+Z	java:S106,"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8”âìĞú0
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(­ù¶ƒüÿÿÿÿ8•âìĞú0
+T	java:S1061"9Replace this use of System.out or System.err by a logger.(…œ _8•âìĞú0
+U	java:S1062"9Replace this use of System.out or System.err by a logger.(éšıæ8•âìĞú0
+U	java:S1063"9Replace this use of System.out or System.err by a logger.(¤Ğşõ8•âìĞú0
+Z	java:S1064"9Replace this use of System.out or System.err by a logger.(Øıİûÿÿÿÿ8•âìĞú0
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8•âìĞú0
+T	java:S106:"9Replace this use of System.out or System.err by a logger.(­•ÿ$8–âìĞú0
+U	java:S106>"9Replace this use of System.out or System.err by a logger.(Šíö8–âìĞú0
+H
+java:S1128"+Remove this unused import 'com.model.User'.(¿–8—âìĞú0
+J
+java:S1128".Remove this unused import 'java.util.HashSet'.(Ê‚êX8¨ øĞú0

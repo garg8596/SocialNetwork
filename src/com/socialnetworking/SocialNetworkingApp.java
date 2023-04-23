@@ -58,10 +58,8 @@ public class SocialNetworkingApp {
             System.out.println("Please login before logout!!!");
         }
         else{
-            System.out.println(session.getLoggedInUser().toString());
             session.setLoggedInUser(null);
             System.out.println("logout successful");
-            return;
         }
     }
 }

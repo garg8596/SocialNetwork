@@ -23,7 +23,8 @@ public final class Messages {
     public static final String UPVOTED_COMMENT = "You upvoted the comment: ";
     public static final String POST_CREATED = "Post created successfully. ";
     public static final String SCORE = "score";
-    public static final String COMMENTS = "comments";
+    public static final String COMMENTS = "comments: ";
+    public static final String COMMENTSS = "comment";
     public static final String TIMESTAMP = "timestamp";
     public static final String INVALID_SORTING_OPTION = "Invalid Sorting option, showing posts randomly";
     public static final String POST = " to the post";
@@ -65,5 +66,7 @@ public final class Messages {
     public static final String REPLY = "reply";
     public static final String SHOW_FEED = "showfeed";
     public static final String SHOW_PROFILE = "showprofile";
+    public static final String FOLLOWED_USER = "followed";
+    public static final String NO_SORT = "No Post to See";
     ;
 }

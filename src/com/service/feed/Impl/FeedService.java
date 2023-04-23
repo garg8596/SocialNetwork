@@ -28,12 +28,24 @@ public class FeedService implements IFeedService {
 
     public void showFeed(User loggedInUser, String sortOption){
         List<Post> postList = loggedInUser.getPosts();
-
-        List<Post> feed = new ArrayList<>();
         List<User> followedUsers = loggedInUser.getFollowing();
-        for (User followedUser : followedUsers) {
-            feed.addAll(followedUser.getPosts());
+
+        if(postList.isEmpty()){
+            System.out.println(Messages.NO_SORT);
+            return ;
         }
+
+        Collections.sort(postList, (p1, p2) -> {
+            boolean isFollowedUser1 = followedUsers.contains(p1.getUser());
+            boolean isFollowedUser2 = followedUsers.contains(p2.getUser());
+            if (isFollowedUser1 && !isFollowedUser2) {
+                return -1;
+            } else if (!isFollowedUser1 && isFollowedUser2) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
 
         switch (sortOption){
             case Messages.SCORE:
@@ -43,7 +55,7 @@ public class FeedService implements IFeedService {
                         return Integer.compare(score2, score1);
                 });
                 break;
-            case Messages.COMMENT:
+            case Messages.COMMENTSS:
                 Collections.sort(postList, (p1, p2) -> {
                     int numComments1 = p1.getCommentList().size();
                     int numComments2 = p2.getCommentList().size();

@@ -51,8 +51,10 @@ public class AuthenticationService implements IAuthenticationService {
             if(!user.getPassword().equals(password)){
                 System.out.println(Messages.INCORRECT_PASSWORD);
             }
-            session.setLoggedInUser(user);
-            System.out.println(Messages.LOGIN_SUCCESSFUL);
+            else{
+                session.setLoggedInUser(user);
+                System.out.println(Messages.LOGIN_SUCCESSFUL);
+            }
         }
     }
 

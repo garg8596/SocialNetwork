@@ -19,7 +19,7 @@ public class CommandFactory {
         commandMap.put(Messages.UPVOTES_COMMENT, new UpvoteCommentCommand());
         commandMap.put(Messages.DOWNVOTES_POST, new DownvotePostCommand());
         commandMap.put(Messages.DOWNVOTES_COMMENT, new DownvoteCommentCommand());
-        commandMap.put(Messages.COMMENTS, new CommentCommand());
+        commandMap.put(Messages.COMMENTSS, new CommentCommand());
         commandMap.put(Messages.REPLY, new ReplyCommand());
         commandMap.put(Messages.SHOW_FEED, new ShowFeedCommand());
         commandMap.put(Messages.SHOW_PROFILE, new ShowProfileCommand());

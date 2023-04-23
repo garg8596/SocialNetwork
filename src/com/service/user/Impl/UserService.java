@@ -50,7 +50,6 @@ public class UserService implements IUserService {
             System.out.println(Messages.FOLLOWERS + userFollower.stream().map(User::getUserName).collect(Collectors.joining(", ")));
             System.out.println(Messages.FOLLOWING + userFollowing.stream().map(User::getUserName).collect(Collectors.joining(", ")));
             System.out.println(Messages.COMMENTS + commentList.stream().map(Comment::toString).collect(Collectors.joining(", ")));
-            System.out.println(Messages.COMMENTS + commentList.stream().map(Comment::toString).collect(Collectors.joining(", ")));
             System.out.println(Messages.REPLIES);
             replyList.forEach(replies -> {
                 System.out.println(Messages.COMMENTS + (replyList.indexOf(replies) + 1) + ": " + replies.stream().map(Reply::toString).collect(Collectors.joining(", ")));
